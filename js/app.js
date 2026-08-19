@@ -417,9 +417,9 @@ daY4();
 function daY5() {
     //Objects in javascript
     let Student = {
-        name = "Kenechukwu",
-        age = 20,
-        course = "Javascript",
+        name : "Kenechukwu",
+        age : 20,
+        course : "Javascript",
     };
 
     //Accessing object properties
@@ -427,9 +427,9 @@ function daY5() {
 
     //Methods in javascript
     let Student2 = {
-        name = "Kenechukwu",
-        age = 20,
-        course = "Javascript",
+        name : "Kenechukwu",
+        age : 20,
+        course : "Javascript",
         greet: function() {
             console.log("Hello, " + this.name);
         }
@@ -437,12 +437,12 @@ function daY5() {
 
     //Nested oblects
     let customerDetails = {
-        name = "Anthony",
-        age = "23",
-        personalDetails = {
-            password = 1234,
-            accountBalance = 50000,
-            email = "example@email.com"
+        name : "Anthony",
+        age : "23",
+        personalDetails : {
+            password : 1234,
+            accountBalance : 50000,
+            email : "example@email.com"
         }
     }
     console.log(customerDetails.personalDetails.accountBalance);
@@ -452,5 +452,17 @@ function daY5() {
     console.log(Object.keys(customerDetails));
     console.log(Object.values(customerDetails));
     console.log(Object.entries(customerDetails));
+
+    //Addition of a new value to the already existing Object
+
+    customerDetails.address = "Awka Anambra State";
+
+
+
+
+
+    //Destruction of an Object values
+    const {name, age} = customerDetails;
+    console.log(name, age);
 }
 daY5();
