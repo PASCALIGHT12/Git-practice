@@ -434,5 +434,16 @@ function daY5() {
             console.log("Hello, " + this.name);
         }
     };
+
+    //Nested oblects
+    let customerDetails = {
+        name = "Anthony",
+        age = "23",
+        personalDeatils = {
+            password = 1234,
+            accountBalance = 50000,
+            email = "example@email.com"
+        }
+    }
 }
 daY5();
