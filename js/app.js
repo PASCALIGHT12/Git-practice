@@ -439,11 +439,18 @@ function daY5() {
     let customerDetails = {
         name = "Anthony",
         age = "23",
-        personalDeatils = {
+        personalDetails = {
             password = 1234,
             accountBalance = 50000,
             email = "example@email.com"
         }
     }
+    console.log(customerDetails.personalDetails.accountBalance);
+
+    //Object.keys, object.values, object.entries
+
+    console.log(Object.keys(customerDetails));
+    console.log(Object.values(customerDetails));
+    console.log(Object.entries(customerDetails));
 }
 daY5();
