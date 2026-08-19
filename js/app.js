@@ -457,12 +457,30 @@ function daY5() {
 
     customerDetails.address = "Awka Anambra State";
 
-
-
-
-
     //Destruction of an Object values
     const {name, age} = customerDetails;
     console.log(name, age);
+
+    //Spread Operator in Object
+    //We use ...(Triple dots) to demote the spread operator
+    const BaseAccount = {
+        type : "savings",
+        currency : "$",
+    }
+
+    const fullAccount = {
+        ...BaseAccount,
+        name : "Anthony",
+        balance : 4500,
+    }
+
+    console.log(fullAccount);
+
+    //Object assign
+    const mergedObject = Object.assign({}, BaseAccount, customerDetails);
+    console.log(mergedObject);
+    const config = Object.freeze({apiKey: 134});
+    config.apiKey = "Changed";
+    console.log(config);
 }
 daY5();

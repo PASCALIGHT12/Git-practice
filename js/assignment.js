@@ -346,3 +346,63 @@ function scoreAnalyzer(scores) {
 let theScores = [45, 78, 92, 34, 67, 88, 51, 73, 29, 95];
 scoreAnalyzer(theScores);
 console.log("====================================================");
+
+//Sixth assignment
+//Time function
+function time() {
+    //Timing function
+    let now = new Date();
+
+    //Display hours
+    let now1 = new Date();
+    console.log(now1.getHours());
+
+    //Display minutes
+    let now2 = new Date();
+    console.log(now2.getMinutes());
+
+    //Display seconds
+    let now3 = new Date();
+    console.log(now3.getSeconds());
+
+    //Display full clock time
+    let now4 = new Date();
+    let hours = now4.getHours();
+    let minutes = now4.getMinutes();
+    let seconds = now4.getSeconds();
+    console.log(hours + ":" + minutes + ":" + seconds);
+
+    //Display a live clock
+    setInterval(function () {
+        let now = new Date();
+
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+        let seconds = now.getSeconds();
+
+        console.log(hours + ":" + minutes + ":" + seconds);
+    }, 1000);
+
+    //Display an alarm clock or a set clock
+    setTimeout(function () {
+        let now = new Date();
+
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+        let seconds = now.getSeconds();
+
+        console.log(hours + ":" + minutes + ":" + seconds);
+    }, 1000);
+
+    //Other date methods
+    console.log(now.getFullYear());
+    console.log(now.getMonth());
+    console.log(now.getDate());
+    console.log(now.getHours());
+    console.log(now.getMinutes());
+    console.log(now.getSeconds());
+
+    //Display a month normally
+    let month = now.getMonth() + 1;
+}
+time();
