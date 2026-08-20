@@ -6,9 +6,9 @@ function daY6() {
     let element = document.getElementById("id");
     console.log(element);
 
-    //Selelcting multiple elements from the HTML document
-    let elements = document.getElementsByClassName("class");
-    console.log(elements);
+    // //Selelcting multiple elements from the HTML document
+    // let elements = document.getElementsByClassName("class");
+    // console.log(elements);
 
     //Selecting multiple elements from the html document\
     let element1 = document.getElementsByTagName("p");
@@ -33,12 +33,13 @@ function daY6() {
     //Styling an element 
     element.style.color = "red";
     element.style.fontSize = "20px";
+    element1.style.color = "white";
 
     //Classlist
     const list = document.querySelectorAll(".class");
     list[0].classList.add("new-class");
     list[1].classList.add("new-class");
-    list[2].classList.remove("new-class");
-    list[3].classList.toggle("new-class");
+    list[1].classList.remove("new-class");
+    list[2].classList.toggle("new-class");
 }
 daY6();
